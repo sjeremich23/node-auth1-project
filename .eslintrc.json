@@ -14,12 +14,16 @@
         "tabWidth": 2
       }
     ],
+    "camelcase": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-dynamic-require": 0,
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "react/prop-types": 0,
     "react/jsx-props-no-spreading": 0,
     "react/jsx-filename-extension": 0,
+    "no-restricted-globals": 0,
     "no-console": 0,
     "no-use-before-define": ["error", { "functions": false, "classes": true }],
     "no-unused-vars": [
