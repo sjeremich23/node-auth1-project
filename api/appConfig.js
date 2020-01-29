@@ -4,14 +4,14 @@ const cors = require("cors");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
-const session = require("express-session"); // install
+const session = require("express-session");
 
 const sessionConfig = require("./sessionConfig");
 
 module.exports = app => {
   app.use(logger("dev"));
   app.use(helmet());
-  app.use(session(sessionConfig)); // turn on sessions
+  app.use(session(sessionConfig));
   app.use(express.json());
   app.use(cors());
   app.use(express.urlencoded({ extended: false }));
