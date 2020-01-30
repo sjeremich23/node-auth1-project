@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const restricted = require("../middlewares/restricted");
+const restricted = require("../../middlewares/restricted");
 
 router.get("/something", restricted, (req, res) => {
   res.send("something");
