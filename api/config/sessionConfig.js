@@ -1,7 +1,7 @@
 const session = require("express-session"); // install
 const KnexSessionStore = require("connect-session-knex")(session);
 
-const dbConnection = require("../database/dbConfig");
+const dbConnection = require("../../database/dbConfig");
 
 module.exports = {
   name: "trackpad life",

@@ -1,11 +1,11 @@
 const express = require("express");
 const createError = require("http-errors");
 
-const appConfig = require("./api/appConfig");
+const appConfig = require("./api/config/appConfig");
 
 const indexRouter = require("./bin");
-const usersRouter = require("./routes/users");
-const restrictedRouter = require("./routes/auth/restricted");
+const usersRouter = require("./api/routes/users");
+const restrictedRouter = require("./api/auth/restricted");
 
 const app = express();
 
