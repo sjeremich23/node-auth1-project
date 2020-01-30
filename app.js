@@ -3,7 +3,7 @@ const createError = require("http-errors");
 
 const appConfig = require("./api/appConfig");
 
-const indexRouter = require("./routes/index");
+const indexRouter = require("./bin");
 const usersRouter = require("./routes/users");
 const restrictedRouter = require("./routes/auth/restricted");
 
